@@ -92,15 +92,25 @@ h6 {
 /*=============HEADER=============*/
 .header {
 	width: 100%;
-	/* узнать и задать градиет для шапки 
-	background: rgb();
-	background: -moz-linear-gradient();
-	background: -webkit-linear-gradient();
-	background: -o-linear-gradient();
-	background: -ms-linear-gradient();
-	background: linear-gradient();
-	*/
-	/* задать высоту шапки
+	background: #25384c;
+	/* IE10+ */ 
+background-image: -ms-linear-gradient(left, #005BFC 0%, #95CDFF 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(left, #005BFC 0%, #95CDFF 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(left, #005BFC 0%, #95CDFF 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #005BFC), color-stop(100, #95CDFF));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(left, #005BFC 0%, #95CDFF 100%);
+
+/* W3C Markup */ 
+background-image: linear-gradient(to right, #005BFC 0%, #95CDFF 100%);
+	/* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 	min-height: ;
 	*/
 }
@@ -121,12 +131,8 @@ h6 {
 .banner img {display: block;}
 
 .color-strip {
-	/* задать высоту цветной полоски 
-	height: ;
-	*/
-	/* вырезать и укзать фон для цветной подложки
-	background: url(../img/) 0 0 repeat-x;
-	*/
+	height: 4px;
+	background: url(.../images/color-strip.jpg) 0 0 repeat-x;
 	border-top: 3px solid #fff;
 	border-bottom: 2px solid #fff;
 	width: 100%;
@@ -135,10 +141,9 @@ h6 {
 
 /*=================MENU============*/
 .menu-wrap {
-/* задать высоту и цвет подложки меню
-	height: ;
-	background: ;
-*/
+	height: 60px;
+	background: #25384c;
+
 	position: relative;
 }
 
@@ -149,22 +154,19 @@ ul.menu li {
 	position: relative;
 }
 ul.menu li a {
-/*задать параметры шрифта для пункта меню (обычные)
-	font-size: ;
-	text-transform: ;//заглавные
-	line-height: px;
-	color: #;
-	font-family: '';
-	font-weight: ; //жирность
-*/
+	font-size: 18px;
+	text-transform:uppercase;
+	line-height: 16px;
+	color: #ffffff;
+	font-family: 'Myriad Pro';
+	font-weight: 25px; 
 	display: block;
 	padding: 18px 0;
 }
+
 ul.menu li a:hover,
 ul.menu li.active a  {
-/*задать параметры шрифта для пункта меню (по наведению)
 	color: #6ab3ff;
-	*/
 }
 
 ul.menu li:hover ul.submenu {display: block;}
@@ -172,9 +174,7 @@ ul.menu li:hover ul.submenu {display: block;}
 .menu ul.submenu {
 	position: absolute;
 	z-index: 9;
-	/* цвет выпадающего меню
-	background:;
-	*/
+	background:#177edd;
 	min-width: 170px;
 	left: -15px;
 	border-bottom: 2px solid #3c3c3c;
@@ -245,7 +245,7 @@ ul.menu li:hover ul.submenu {display: block;}
 .post-list {margin-bottom: 30px;}
 
 .post {
-/* Задать размер для блока поста
+/* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 	width: ;
 	height: ;
 */
@@ -273,7 +273,7 @@ ul.menu li:hover ul.submenu {display: block;}
 }
 
 .post-title {
-/* задать шрифт, междустрочный интервал для заголовков постов 
+/* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 
 	font-family: '';
 	line-height: ;
 */
@@ -288,7 +288,7 @@ ul.menu li:hover ul.submenu {display: block;}
 }
 
 .post-txt {
-/* задать шрифт, междустрочный интервал для текста постов
+/* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	font-size: ;
 	line-height: ;
 */
@@ -717,7 +717,7 @@ ul.footer-menu li a:hover {opacity: 0.7;}
 .subscription {
 	
 	text-align: center;
-	/* Задать высоту, цвет текста и подложки для полосы подписки 
+	/* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 
 	color: ;
 	background: ;
 	height: ;
@@ -738,7 +738,7 @@ ul.footer-menu li a:hover {opacity: 0.7;}
 }
 
 .subscription input[type="email"] {
-/* задать размеры блока для ввода емейла
+/* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	width: ;
 	height:;
 */
@@ -752,7 +752,7 @@ ul.footer-menu li a:hover {opacity: 0.7;}
 }
 
 .subscription .btn {
-/* задать размеры блока, цвета дла кнопки в полосе подписки
+/* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	width: ;
 	height: ;
 	color: ;
@@ -771,8 +771,8 @@ ul.footer-menu li a:hover {opacity: 0.7;}
 .subscription .btn:hover {background: #25384c;}
 
 .footer {
-/* задать высоту, цвет текста, подложки, Размер шрифта и междустрочного
-интервала для футера 
+/* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 
 	background: ;
 	height: ;
 	color: ;

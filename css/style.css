@@ -110,9 +110,8 @@ background-image: -webkit-linear-gradient(left, #005BFC 0%, #95CDFF 100%);
 
 /* W3C Markup */ 
 background-image: linear-gradient(to right, #005BFC 0%, #95CDFF 100%);
-	/* ������ ������ �����
-	min-height: ;
-	*/
+	min-height: 120px;
+
 }
 
 .logo {
@@ -131,10 +130,10 @@ background-image: linear-gradient(to right, #005BFC 0%, #95CDFF 100%);
 .banner img {display: block;}
 
 .color-strip {
-	height: 4px;
-	background: url(.../images/color-strip.jpg) 0 0 repeat-x;
-	border-top: 3px solid #fff;
-	border-bottom: 2px solid #fff;
+	height: 7px;
+	background: url(/images/color-strip.jpg) 0 0 repeat-x;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
 	width: 100%;
 }
 
@@ -245,10 +244,10 @@ ul.menu li:hover ul.submenu {display: block;}
 .post-list {margin-bottom: 30px;}
 
 .post {
-/* ������ ������ ��� ����� �����
-	width: ;
-	height: ;
-*/
+
+	width: 370px;
+	height:px;
+
 	float: left;
 	margin: 0 30px 30px 0;
 }
@@ -273,11 +272,11 @@ ul.menu li:hover ul.submenu {display: block;}
 }
 
 .post-title {
-/* ������ �����, ������������� �������� ��� ���������� ������ 
-	font-family: '';
-	line-height: ;
-*/
+	font-family: 'Myriad Pro';
+	font-size: 18px;
+	line-height: 30px;
 	margin-bottom: 10px;
+	font-weight: bold;
 	display: block;
 	 -webkit-transition: all 0.3s;
      -moz-transition: all 0.3s;
@@ -288,10 +287,8 @@ ul.menu li:hover ul.submenu {display: block;}
 }
 
 .post-txt {
-/* ������ �����, ������������� �������� ��� ������ ������
-	font-size: ;
-	line-height: ;
-*/
+	font-size: 14px;
+	line-height: 24px;
 	height: 68px;
 	overflow: hidden;
 }
@@ -717,11 +714,9 @@ ul.footer-menu li a:hover {opacity: 0.7;}
 .subscription {
 	
 	text-align: center;
-	/* ������ ������, ���� ������ � �������� ��� ������ �������� 
-	color: ;
-	background: ;
-	height: ;
-	*/
+	color: #ffffff;
+	background: #e61324;
+	height: 55px;
 	display: table;
 	width: 100%;
 }
@@ -738,10 +733,8 @@ ul.footer-menu li a:hover {opacity: 0.7;}
 }
 
 .subscription input[type="email"] {
-/* ������ ������� ����� ��� ����� ������
-	width: ;
-	height:;
-*/
+	width: 270px;
+	height: 40px;
 	display: inline-block;
 	border: 0;
 	background: #fff;
@@ -752,12 +745,10 @@ ul.footer-menu li a:hover {opacity: 0.7;}
 }
 
 .subscription .btn {
-/* ������ ������� �����, ����� ��� ������ � ������ ��������
-	width: ;
-	height: ;
-	color: ;
-	background: ;
-	*/
+	width: 170px;
+	height: 40px;
+	color: #ffffff;
+	background: #ad0815;
 	border: 0;
 	margin-left: 25px;
 	-webkit-transition: all 0.3s;
@@ -771,14 +762,12 @@ ul.footer-menu li a:hover {opacity: 0.7;}
 .subscription .btn:hover {background: #25384c;}
 
 .footer {
-/* ������ ������, ���� ������, ��������, ������ ������ � ��������������
-��������� ��� ������ 
-	background: ;
-	height: ;
-	color: ;
-	font-size: ;
-	line-height: ;
-	*/
+
+	background: #0a51b1;
+	height: 86px;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: auto;
 }
 
 .footer-logo {

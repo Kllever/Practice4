@@ -131,7 +131,7 @@ background-image: linear-gradient(to right, #005BFC 0%, #95CDFF 100%);
 
 .color-strip {
 	height: 7px;
-	background: url(/images/color-strip.jpg) 0 0 repeat-x;
+	background: url(../images/color-strip.jpg) 0 0 repeat-x;
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid #fff;
 	width: 100%;
